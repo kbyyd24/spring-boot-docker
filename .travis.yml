@@ -1,0 +1,14 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+services:
+  - docker
+
+jobs:
+  include:
+    - stage: test
+      script: ./gradlew clean build
+    - stage: push_image
+      script: ./push_image.sh
