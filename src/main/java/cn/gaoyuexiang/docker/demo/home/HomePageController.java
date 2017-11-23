@@ -1,4 +1,4 @@
-package cn.gaoyuexiang.docker.demo;
+package cn.gaoyuexiang.docker.demo.home;
 
 import java.util.Date;
 import java.util.Map;
@@ -11,7 +11,7 @@ import com.google.common.collect.ImmutableMap;
 @RestController
 public class HomePageController {
 
-    @GetMapping
+    @GetMapping()
     public Map home() {
         return ImmutableMap.of("Name", "Spring Boot Demo in Docker", "Now: ", new Date(System.currentTimeMillis()));
     }
