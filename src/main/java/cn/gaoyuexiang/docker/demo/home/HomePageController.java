@@ -1,5 +1,6 @@
 package cn.gaoyuexiang.docker.demo.home;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Map;
 
@@ -13,6 +14,6 @@ public class HomePageController {
 
     @GetMapping()
     public Map home() {
-        return ImmutableMap.of("Name", "Spring Boot Demo in Docker", "Now: ", new Date(System.currentTimeMillis()));
+        return ImmutableMap.of("Name", "Spring Boot Demo in Docker", "Now: ", LocalDateTime.now());
     }
 }
