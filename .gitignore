@@ -27,3 +27,4 @@ nbdist/
 
 ### VS code ###
 bin/
+.vscode
