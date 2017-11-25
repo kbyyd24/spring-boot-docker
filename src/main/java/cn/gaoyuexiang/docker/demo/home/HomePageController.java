@@ -17,6 +17,6 @@ public class HomePageController {
 
     @GetMapping()
     public Map home() {
-        return ImmutableMap.of("Name", "Spring Boot Demo in Docker", "Deployed at: ", deployTime);
+        return ImmutableMap.of("Name", "Spring Boot Demo in Docker", "Deployed at: ", deployTime.toString());
     }
 }
